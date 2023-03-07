@@ -137,14 +137,14 @@
             <section class="appointment">
                 <h2>Записаться</h2>
                 <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-                <form class="appointment-form" action="https://echo.htmlacademy.ru" method="POST">
+                <form class="appointment-form" action="telegram.php" method="POST">
                     <p class="appointment-item">
                         <label for="appointment-date" >Дата</label>
-                        <input id="appointment-date" type="date" name="date" value="" placeholder="23.12.2022">
+                        <input id="appointment-date" type="date" name="user-date" value="" placeholder="23.12.2022">
                     </p>
                     <p class="appointment-item">
                         <label for="appointment-time">Время</label>
-                            <select class="appointment-time" name="time">
+                            <select class="appointment-time" name="user-time">
                               <option value="09:00">09:00</option>
                               <option value="10:00">10:00</option>  
                               <option value="16:00">16:00</option>
@@ -155,11 +155,11 @@
                     </p>
                     <p class="appointment-item">
                         <label for="appointment-name">Ваше имя</label>
-                        <input id="appointment-name" type="text" name="name" value="" placeholder="Анастасия Игоревна">
+                        <input id="appointment-name" type="text" name="user-name" value="" placeholder="Анастасия Игоревна">
                     </p>
                     <p class="appointment-item">
                         <label for="appointment-phone">Телефон</label>
-                        <input id="appointment-phone" type="text" name="phone" value="" placeholder="+380123456789">
+                        <input id="appointment-phone" type="text" name="user-phone" value="" placeholder="+380123456789">
                     </p>
                     <button class="button" type="submit">Отправить</button>
                 </form>
@@ -210,22 +210,22 @@
     <section class="modal modal-login">
         <h2>Записаться</h2>
         <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="POST">
+        <form class="appointment-form" action="telegram.php" method="POST">
             <p class="appointment-item">
                 <label class="visually-hidden" for="user-login">Дата</label>
-                <input class="login-icon-user" id="user-login" type="date" name="date" placeholder="Дата">
+                <input class="login-icon-user" id="user-login" type="date" name="user-date" placeholder="Дата">
             </p>
             <p class="appointment-item">
                 <label class="visually-hidden" for="user-password">Время</label>
-                <input class="login-icon-password" id="user-password" type="time" name="time" placeholder="Время">
+                <input class="login-icon-password" id="user-password" type="time" name="user-time" placeholder="Время">
             </p>
             <p class="appointment-item">
                 <label class="visually-hidden" for="user-password">Ваше имя</label>
-                <input class="login-icon-password" id="user-password" type="name" name="name" placeholder="Ваше имя">
+                <input class="login-icon-password" id="user-password" type="name" name="user-name" placeholder="Ваше имя">
             </p>
             <p class="appointment-item">
                 <label class="visually-hidden" for="user-password">Телефон</label>
-                <input class="login-icon-password" id="user-password" type="tel" name="tel" placeholder="Телефон">
+                <input class="login-icon-password" id="user-password" type="tel" name="user-tel" placeholder="Телефон">
             </p>
             <p class="login-help">
                 <label class="login-checkbox">
